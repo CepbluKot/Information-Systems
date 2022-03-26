@@ -1,0 +1,35 @@
+{
+    "1": {
+        "survay_code": 2,
+        "survey_name": "\u041a\u0442\u043e \u044f",
+        "from_teleg_id": 1,
+        "questions": [
+            "\u041f\u0443\u0442\u0438\u043d?",
+            "\u041a\u0442\u043e \u043e\u043d?",
+            "\u041a\u0442\u043e \u043e\u043d\u0438?"
+        ],
+        "answer": []
+    },
+    "2": {
+        "survay_code": 3,
+        "survey_name": "\u041a\u0430\u043a\u0430\u0435\u0448\u044c?",
+        "from_teleg_id": 1,
+        "questions": [
+            "\u041f\u0443\u0442\u0438\u043d?",
+            "\u041a\u0442\u043e \u043e\u043d?",
+            "\u041a\u0442\u043e \u043e\u043d\u0438?"
+        ],
+        "answer": []
+    },
+    "3": {
+        "survay_code": 4,
+        "survey_name": "Pizda Vagina",
+        "from_teleg_id": 3,
+        "questions": [
+            "\u041f\u0443\u0442\u0438\u043d?",
+            "\u041a\u0442\u043e \u043e\u043d?",
+            "\u041a\u0442\u043e \u043e\u043d\u0438?"
+        ],
+        "answer": []
+    }
+}

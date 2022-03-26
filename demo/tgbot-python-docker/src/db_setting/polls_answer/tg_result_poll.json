@@ -1,0 +1,32 @@
+{
+   "4":[
+      {
+         "question":"Путин?",
+         "options":[
+            "Да",
+            " Нет"
+         ],
+         "id":0,
+         "type":"poll"
+      },
+      {
+         "question":"Кто он?",
+         "id":0,
+         "type":"msg"
+      },
+      {
+         "question":"Кто они?",
+         "options":[
+            "Херабора",
+            " лолабола"
+         ],
+         "id":0,
+         "type":"poll"
+      },
+      {
+         "form_name":"Pizda Vagina",
+         "type":"recipient_info",
+         "form_id":2
+      }
+   ]
+}
