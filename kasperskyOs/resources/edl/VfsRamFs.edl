@@ -1,0 +1,6 @@
+entity multi_vfs_dhcpcd.VfsRamFs
+
+components
+{
+    vfs: kl.Vfs
+}

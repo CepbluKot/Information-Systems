@@ -1,0 +1,390 @@
+use nk.base._
+
+use EDL multi_vfs_dhcpcd.Env
+use EDL multi_vfs_dhcpcd.Client
+use EDL multi_vfs_dhcpcd.VfsRamFs
+use EDL multi_vfs_dhcpcd.VfsSdcardFs
+use EDL multi_vfs_dhcpcd.VfsNet
+use EDL kl.rump.Dhcpcd
+use EDL kl.drivers.SDCard
+use EDL kl.drivers.RAMDisk
+use EDL Einit
+use EDL kl.core.Core
+
+/**
+ * This policy enables to start up system entities by KOS kernel.
+ */
+execute src = kl.core.Core, dst = kl.core.Core
+{
+    grant()
+}
+
+execute src = kl.core.Core, dst = Einit
+{
+    grant()
+}
+
+/**
+ * These instructions enables to start up and initialize entities specified in file init.yaml.in.
+ */
+execute src = Einit, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+execute src = Einit, dst = kl.drivers.RAMDisk
+{
+    grant()
+}
+
+execute src = Einit, dst = kl.drivers.SDCard
+{
+    grant()
+}
+
+execute src = Einit, dst = multi_vfs_dhcpcd.VfsRamFs
+{
+    grant()
+}
+
+execute src = Einit, dst = multi_vfs_dhcpcd.VfsSdcardFs
+{
+    grant()
+}
+
+execute src = Einit, dst = multi_vfs_dhcpcd.VfsNet
+{
+    grant()
+}
+
+execute src = Einit, dst = kl.rump.Dhcpcd
+{
+    grant()
+}
+
+execute src = Einit, dst = multi_vfs_dhcpcd.Client
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Einit entity to KOS kernel
+ * and get responses. It makes able to use system calls by Einit.
+ */
+request src = Einit, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = Einit
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Dhcpcd entity to KOS kernel
+ * and get responses.
+ */
+request src = kl.rump.Dhcpcd, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = kl.rump.Dhcpcd
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from RAMDisk entity to KOS kernel
+ * and get responses.
+ */
+request src = kl.drivers.RAMDisk, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = kl.drivers.RAMDisk
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Env entity to KOS kernel
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.Env, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsNet entity to KOS kernel
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsNet, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = multi_vfs_dhcpcd.VfsNet
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsRamFs entity to KOS kernel
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsRamFs, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = multi_vfs_dhcpcd.VfsRamFs
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsSdcardFs entity to KOS kernel
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsSdcardFs, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = multi_vfs_dhcpcd.VfsSdcardFs
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Client entity to KOS kernel
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.Client, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = multi_vfs_dhcpcd.Client
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Dhcpcd entity to Env entity
+ * and get responses.
+ */
+request src = kl.rump.Dhcpcd, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.Env, dst = kl.rump.Dhcpcd
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Client entity to Env entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.Client, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.Env, dst = multi_vfs_dhcpcd.Client
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsNet entity to Env entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsNet, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.Env, dst = multi_vfs_dhcpcd.VfsNet
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsRamFs entity to Env entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsRamFs, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.Env, dst = multi_vfs_dhcpcd.VfsRamFs
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsSdcardFs entity to Env entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsSdcardFs, dst = multi_vfs_dhcpcd.Env
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.Env, dst = multi_vfs_dhcpcd.VfsSdcardFs
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Client entity to VfsSdcardFs entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.Client, dst = multi_vfs_dhcpcd.VfsSdcardFs
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.VfsSdcardFs, dst = multi_vfs_dhcpcd.Client
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Client entity to VfsSdcardFs entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.Client, dst = multi_vfs_dhcpcd.VfsRamFs
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.VfsRamFs, dst = multi_vfs_dhcpcd.Client
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Dhcpcd entity to VfsRamFs entity
+ * and get responses.
+ */
+request src = kl.rump.Dhcpcd, dst = multi_vfs_dhcpcd.VfsRamFs
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.VfsRamFs, dst = kl.rump.Dhcpcd
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsSdcardFs entity to SDCard entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsSdcardFs, dst = kl.drivers.SDCard
+{
+    grant()
+}
+
+response src = kl.drivers.SDCard, dst = multi_vfs_dhcpcd.VfsSdcardFs
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsRamFs entity to RAMDisk entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.VfsRamFs, dst = kl.drivers.RAMDisk
+{
+    grant()
+}
+
+response src = kl.drivers.RAMDisk, dst = multi_vfs_dhcpcd.VfsRamFs
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Client entity to VfsNet entity
+ * and get responses.
+ */
+request src = multi_vfs_dhcpcd.Client, dst = multi_vfs_dhcpcd.VfsNet
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.VfsNet, dst = multi_vfs_dhcpcd.Client
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from Dhcpcd entity to VfsNet entity
+ * and get responses.
+ */
+request src = kl.rump.Dhcpcd, dst = multi_vfs_dhcpcd.VfsNet
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.VfsNet, dst = kl.rump.Dhcpcd
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from SDCard entity to KOS kernel
+ * and get responses.
+ */
+request src = kl.drivers.SDCard, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = kl.drivers.SDCard
+{
+    grant()
+}
+
+/**
+ * This code enables to call methods of the security interface.
+ */
+
+security src = kl.drivers.SDCard, method = Register
+{
+    grant ()
+}
+
+security src = kl.drivers.RAMDisk, method = Register
+{
+    grant ()
+}
+
+/**
+ * This code enables to send requests from Dhcpcd entity to VfsSdcardFs entity
+ * and get responses.
+ */
+request src = kl.rump.Dhcpcd, dst = multi_vfs_dhcpcd.VfsSdcardFs
+{
+    grant()
+}
+
+response src = multi_vfs_dhcpcd.VfsSdcardFs, dst = kl.rump.Dhcpcd
+{
+    grant()
+}

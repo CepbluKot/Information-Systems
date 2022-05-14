@@ -1,0 +1,27 @@
+use common._
+
+/* Only for ARM platform. */
+use EDL kl.drivers.BSP
+
+/**
+ * These instructions enables to start up and initialize entities specified in file init.yaml.in.
+ */
+
+execute src = Einit, dst = kl.drivers.BSP
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from BSP entity to KOS kernel
+ * and get responses.
+ */
+request src = kl.drivers.BSP, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = kl.drivers.BSP
+{
+    grant()
+}

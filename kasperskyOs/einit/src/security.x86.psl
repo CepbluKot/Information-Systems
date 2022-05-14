@@ -1,0 +1,41 @@
+use common._
+
+use EDL kl.drivers.PCIE
+use EDL kl.drivers.ATA
+
+/**
+ * These instructions enables to start up and initialize entities specified in file init.yaml.in.
+ */
+
+execute src = Einit, dst = kl.drivers.PCIE
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from PCIE entity to KOS kernel
+ * and get responses. It makes able to use system calls by Einit.
+ */
+request src = kl.drivers.PCIE, dst = kl.core.Core
+{
+    grant()
+}
+
+response src = kl.core.Core, dst = kl.drivers.PCIE
+{
+    grant()
+}
+
+/**
+ * This code enables to send requests from VfsNet entity to PCIE entity
+ * and get responses. It makes able to use system calls by Einit.
+ */
+request src = multi_vfs_dhcpcd.VfsNet, dst = kl.drivers.PCIE
+{
+    grant()
+}
+
+response src = kl.drivers.PCIE, dst = multi_vfs_dhcpcd.VfsNet
+{
+    grant()
+}

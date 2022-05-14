@@ -1,0 +1,9 @@
+#ifndef CONFIG_H_IN
+#define CONFIG_H_IN
+
+#cmakedefine DHCPCD_FALLBACK
+#cmakedefine DHCPCD_DYNAMIC
+#cmakedefine DHCPCD_STATIC
+#cmakedefine DHCPCD_SDCARD
+
+#endif // CONFIG_H_IN

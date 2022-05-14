@@ -1,0 +1,32 @@
+entities:
+
+- name: multi_vfs_dhcpcd.Env
+
+- name: multi_vfs_dhcpcd.VfsRamFs
+  connections:
+  - target: multi_vfs_dhcpcd.Env
+    id: {var: ENV_SERVICE_NAME, include: env/env.h}
+@INIT_VfsRamFs_ENTITY_CONNECTIONS+@
+
+- name: multi_vfs_dhcpcd.VfsSdcardFs
+  connections:
+  - target: multi_vfs_dhcpcd.Env
+    id: {var: ENV_SERVICE_NAME, include: env/env.h}
+@INIT_VfsSdcardFs_ENTITY_CONNECTIONS+@
+
+- name: multi_vfs_dhcpcd.VfsNet
+  connections:
+  - target: multi_vfs_dhcpcd.Env
+    id: {var: ENV_SERVICE_NAME, include: env/env.h}
+@INIT_VfsNet_ENTITY_CONNECTIONS+@
+
+- name: multi_vfs_dhcpcd.Client
+  connections:
+  - target: multi_vfs_dhcpcd.Env
+    id: {var: ENV_SERVICE_NAME, include: env/env.h}
+  - target: multi_vfs_dhcpcd.VfsNet
+    id: VfsNet
+
+@INIT_Client_ENTITY_CONNECTIONS+@
+
+@INIT_EXTERNAL_ENTITIES@
