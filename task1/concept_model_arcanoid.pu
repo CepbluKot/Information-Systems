@@ -1,0 +1,74 @@
+@startuml
+
+class Player {
+
+  position : int
+  active_bonus : int
+  dead : bool
+  size : int
+  lifes : int
+  move() : void
+  collide_with_wall() : void
+  activate_bonus() : void
+  die() : void
+
+}
+
+class Cube {
+
+   contains_bonus_type : int
+   health_points : int
+   size : int
+   get_damage() : void
+   die() : void
+   drop_bonus() : void
+
+}
+
+class Ball {
+
+   position : int
+   speed : int
+   move_direction : int
+   size : int
+   collide() : void
+   make_damage_to_cube() : void
+
+}
+
+class Wall {
+   positon : int
+}
+
+class Shooting {
+   bullet_position : int
+   bullet_direction : int
+   bullet_speed : int
+   make_damage_to_cube() :void
+}
+
+class Bonus {
+
+   type : int
+   positon : int
+   direction : int
+   speed : int
+   change_object_size() : void
+   create_ball() : void
+   give_player_a_gun() : void
+
+}
+
+Player --> Wall
+Player --> Shooting
+Player --> Bonus
+
+Ball --> Wall
+Ball --> Player
+Ball --> Cube
+
+Cube --> Bonus
+
+Shooting --> Cube
+
+@enduml
