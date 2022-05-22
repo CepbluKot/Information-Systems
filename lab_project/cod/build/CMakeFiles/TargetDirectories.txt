@@ -1,0 +1,3 @@
+/home/anton/Documents/codes/inf_sys/lab_project/cod/build/CMakeFiles/rebuild_cache.dir
+/home/anton/Documents/codes/inf_sys/lab_project/cod/build/CMakeFiles/edit_cache.dir
+/home/anton/Documents/codes/inf_sys/lab_project/cod/build/CMakeFiles/main.dir

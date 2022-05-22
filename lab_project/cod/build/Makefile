@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/Documents/codes/vision
+CMAKE_SOURCE_DIR = /home/anton/Documents/codes/inf_sys/lab_project/cod/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/Documents/codes/vision
+CMAKE_BINARY_DIR = /home/anton/Documents/codes/inf_sys/lab_project/cod/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/Documents/codes/vision/CMakeFiles /home/anton/Documents/codes/vision/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/Documents/codes/inf_sys/lab_project/cod/build/CMakeFiles /home/anton/Documents/codes/inf_sys/lab_project/cod/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/Documents/codes/vision/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/Documents/codes/inf_sys/lab_project/cod/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-main.o: main.cpp.o
+home/anton/Documents/codes/inf_sys/lab_project/cod/main.o: home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o
 
-.PHONY : main.o
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o
 
-main.i: main.cpp.i
+home/anton/Documents/codes/inf_sys/lab_project/cod/main.i: home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i
 
-.PHONY : main.i
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i
 
-main.s: main.cpp.s
+home/anton/Documents/codes/inf_sys/lab_project/cod/main.s: home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s
 
-.PHONY : main.s
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/main.o"
+	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/main.i"
+	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/main.s"
 .PHONY : help
 
 
