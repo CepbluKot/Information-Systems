@@ -1,0 +1,3 @@
+/home/anton/Documents/codes/vision/CMakeFiles/rebuild_cache.dir
+/home/anton/Documents/codes/vision/CMakeFiles/edit_cache.dir
+/home/anton/Documents/codes/vision/CMakeFiles/main.dir

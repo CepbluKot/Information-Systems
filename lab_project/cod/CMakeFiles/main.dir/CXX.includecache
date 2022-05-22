@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anton/Documents/codes/vision/camera.h
+opencv4/opencv2/opencv.hpp
+/home/anton/Documents/codes/vision/opencv4/opencv2/opencv.hpp
+
+/home/anton/Documents/codes/vision/main.cpp
+opencv4/opencv2/opencv.hpp
+/home/anton/Documents/codes/vision/opencv4/opencv2/opencv.hpp
+camera.h
+/home/anton/Documents/codes/vision/camera.h
+
