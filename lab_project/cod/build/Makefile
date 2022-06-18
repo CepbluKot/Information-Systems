@@ -123,32 +123,32 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-home/anton/Documents/codes/inf_sys/lab_project/cod/main.o: home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o
+home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.o: home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.o
 
-.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.o
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.o
 
 # target to build an object file
-home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o
-.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.o
+home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.o
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.o
 
-home/anton/Documents/codes/inf_sys/lab_project/cod/main.i: home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i
+home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.i: home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.i
 
-.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.i
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.i
 
 # target to preprocess a source file
-home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i
-.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.i
+home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.i
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.i
 
-home/anton/Documents/codes/inf_sys/lab_project/cod/main.s: home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s
+home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.s: home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.s
 
-.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.s
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.s
 
 # target to generate assembly for a file
-home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s
-.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp.s
+home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.s
+.PHONY : home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
-	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/main.o"
-	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/main.i"
-	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/main.s"
+	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.o"
+	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.i"
+	@echo "... home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.s"
 .PHONY : help
 
 

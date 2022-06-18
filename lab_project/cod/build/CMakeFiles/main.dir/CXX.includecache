@@ -6,13 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/Documents/codes/inf_sys/lab_project/cod/camera.h
+/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/main.cpp
+fstream
+-
 opencv4/opencv2/opencv.hpp
-/home/anton/Documents/codes/inf_sys/lab_project/cod/opencv4/opencv2/opencv.hpp
+-
+modules/camera.h
+/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/modules/camera.h
+modules/detection.h
+/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/modules/detection.h
 
-/home/anton/Documents/codes/inf_sys/lab_project/cod/main.cpp
+/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/modules/camera.h
 opencv4/opencv2/opencv.hpp
-/home/anton/Documents/codes/inf_sys/lab_project/cod/opencv4/opencv2/opencv.hpp
-camera.h
-/home/anton/Documents/codes/inf_sys/lab_project/cod/camera.h
+/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/modules/opencv4/opencv2/opencv.hpp
+string
+-
+
+/home/anton/Documents/codes/inf_sys/lab_project/cod/cpp/modules/detection.h
+opencv4/opencv2/opencv.hpp
+-
+fstream
+-
 

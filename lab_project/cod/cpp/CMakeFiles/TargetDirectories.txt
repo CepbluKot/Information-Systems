@@ -1,0 +1,3 @@
+/home/anton/Documents/codes/camtest/cpp/CMakeFiles/rebuild_cache.dir
+/home/anton/Documents/codes/camtest/cpp/CMakeFiles/edit_cache.dir
+/home/anton/Documents/codes/camtest/cpp/CMakeFiles/main.dir
